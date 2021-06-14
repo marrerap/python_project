@@ -1,13 +1,13 @@
 class Start:
-    def __init__(self, start):
-       self.start = start
+    def __init__(self, start_choice):
+       self.start_choice = start_choice
        
       
     
     def start(self):
-        if self.start == "n" or self.start  == "N":
+        if self.start_choice == "n" or self.start_choice  == "N":
             return (f"Welp, if you never try, you never fail right?")
-        elif self.start == "y" or self.start == "Y":
+        elif self.start_choice == "y" or self.start_choice == "Y":
             print()
             print()
             print()
@@ -27,5 +27,9 @@ class Start:
             print('looks as if it\'s made of a liquid-like material. ')
             print('Now that you have shaken off the initial shock of being lost, you')
             print("you decide to attempt to figure a way out of this f**^&%n room!")
+            print()
+            print()
+            print()
+            print()
 
             
