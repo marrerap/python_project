@@ -1,11 +1,15 @@
-def intro():
-    print()
-    print()
-    print()
-    print("                    *WWWOOOOOSSSSSHHHHH*")
-    print("        (The world around you has fully materialized)")
-    print()
-    print()
+from start_game import Start
+
+
+
+# def intro():
+#     print()
+#     print()
+#     print()
+#     print("                    *WWWOOOOOSSSSSHHHHH*")
+#     print("        (The world around you has fully materialized)")
+#     print()
+#     print()
 
 print()
 print()
@@ -27,7 +31,11 @@ print()
 print("            You know something isn't quite right.")
 game_start = input("> Do you want to try investigate this Instance of reality? (Y/N): ")
 
-if game_start == "n" or game_start == "N":
-    print("Welp, if you never try, you never fail right?")
-elif game_start == "y" or game_start == "Y":
-    intro()
+start = Start(game_start)
+
+Start.start(start) 
+
+# if game_start == "n" or game_start == "N":
+#     print("Welp, if you never try, you never fail right?")
+# elif game_start == "y" or game_start == "Y":
+#     intro()
